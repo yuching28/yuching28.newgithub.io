@@ -1,0 +1,240 @@
+
+html{
+    font-size:12px;
+    color:bisque;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: "Nunito";
+    background-color:#6B625F;
+    margin:0;
+    padding:0;
+    
+}
+
+/*Nav bar*/
+
+nav {
+    background-color:#6077EB;
+    width:100%;
+    height:50px;
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    left:0;
+    padding-left:10px;
+    z-index: 100;
+    
+    
+}
+
+nav li {
+    display: inline-block;
+    padding-right:20px;
+    
+}
+
+nav p {
+    font-size: 20px;
+    color:bisque;
+}
+
+
+/*Landing*/
+.mainarea{
+    background-image:url("Resources/20231216_074829\ \(1\).jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding: 300px 0;
+    width:100%;
+    
+}    
+
+.landing {
+    position:relative;
+    background-color:#80966F;
+    color:bisque;
+    width:100%;
+    padding: 10px 0;
+    text-align: center;
+    top:20px;
+    
+    
+}
+
+
+
+/*Pics*/
+.picture {
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+.pic {
+    height:450px;
+    width:auto;
+    margin:10px;
+   
+    
+}
+
+/*Upcoming Events*/
+.aboutus {
+    display:block;
+    text-align: center;
+    
+}
+.upcomingevents {
+    padding: 5px;
+    display:block;
+    text-align: center;
+    
+}
+
+
+/*Footer*/
+footer {
+    background-color:#6077EB;
+    width:100%;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+/*button*/
+.signup {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: beige;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #6077EB;
+   
+   
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+.signup:hover {
+    background-color: rgba(255, 0, 0, 1);
+  }
+  
+.signup:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+
+
+  @media only screen and (max-width:353px) {
+    nav {
+        font-size:0.5em;
+    
+    }
+
+    nav p {
+        font-size:1.5em;
+    }
+
+    .mainarea{
+       width:100%;
+       padding: 10vh 0;
+        
+    }    
+    
+    .picture {
+        display:grid;
+        justify-content: center;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    .pic {
+        height:auto;
+        width:100%;
+           
+    }
+
+   
+  }
+
+  @media only screen and (max-width:718px) {
+    nav {
+        font-size:0.5em;
+    
+    }
+
+    nav p {
+        font-size:1.5em;
+    }
+    .picture {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+
+    .pic{
+        width: 100%;             
+        max-width: 100%;         
+        height: auto;            
+        margin: 10px; 
+       
+    }
+  }
+
+  @media only screen and (max-width:765px) {
+
+    .picture {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items: center;
+        margin-top:20px;
+        margin-bottom: 20px;
+       
+    }
+    
+    .pic{
+        height:auto;
+        width:100%;
+        max-width:450px;
+        margin-left:auto;
+        margin-right:auto;
+        margin:10px;
+    }
+  }
+
+  @media only screen and (max-width:1078px) {
+
+    .picture {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin-top:20px;
+        margin-bottom: 20px;
+        
+       
+    }
+    
+    .pic{
+        display:flex;
+        height:auto;
+        width:100%;
+        max-width:450px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+  }
